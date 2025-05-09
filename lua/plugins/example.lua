@@ -212,8 +212,29 @@ return {
         "stylua",
         "shellcheck",
         "shfmt",
-        "flake8",
+        "vtsls",
+        -- "flake8",
       },
+    },
+    lazy = false,
+    config = function()
+      require("mason").setup()
+    end,
+  },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    lazy = false,
+    config = function()
+      require("mason-lspconfig").setup()
+    end,
+    dependencies = {
+      "williamboman/mason.nvim",
+    },
+  },
+  {
+    "neovim/nvim-lspconfig",
+    dependencies = {
+      "williamboman/mason-lspconfig.nvim",
     },
   },
 }

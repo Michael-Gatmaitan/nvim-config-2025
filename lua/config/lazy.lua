@@ -66,3 +66,6 @@ require("nvim-treesitter.configs").setup({
     -- enable = true,
   },
 })
+
+-- require("mason").setup()
+-- require("mason-lspconfig").setup()

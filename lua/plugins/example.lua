@@ -78,6 +78,7 @@ return {
         -- pyright will be automatically installed with mason and loaded with lspconfig
         pyright = {},
         dartls = {},
+        vtsls = { enabled = false },
       },
     },
     -- opts = function()
@@ -133,6 +134,7 @@ return {
       ensure_installed = {
         "bash",
         "html",
+        "css",
         "javascript",
         "json",
         "lua",
@@ -212,7 +214,8 @@ return {
         "stylua",
         "shellcheck",
         "shfmt",
-        "vtsls",
+        "typescript-language-server",
+        -- "vtsls",
         -- "flake8",
       },
     },
